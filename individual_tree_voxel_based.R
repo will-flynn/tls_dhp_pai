@@ -4,9 +4,7 @@ pacman::p_load(data.table, dplyr, doSNOW, doParallel, rTLS, VoxR, sf, raster,
 dir <- "C:/Users/wrmfl/Desktop/downsampled_05"
 tree.files <- list.files(paste0(dir, '/tree'), pattern = ".txt") %>% gsub(pattern = "\\.txt$", "", .)
 
-i=grep("alt01_79", tree.files)
-
-res = 0.5
+res = 0.05
 
 cores <- detectCores()
 useCores <- cores - 4
