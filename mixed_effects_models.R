@@ -16,7 +16,7 @@ species_model <- lmerTest::lmer(alpha ~ species + (1|plot),
 summary(species_model)
 
 ################################################################################
-## height models
+## height/ CAI models
 
 species_data <- split(tree_data, tree_data$species)
 
